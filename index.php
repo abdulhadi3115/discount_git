@@ -21,13 +21,11 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 
-	<script src="jquery.min.js"></script>
-	<script src="jquery.mask.min.js"></script>
 
 </head>
 <body>
 
-	<div class="bg-contact3" style="background-image: url(https://www.lokerlike.id/wp-content/uploads/2017/05/indomaret-1.jpg);">
+	<div class="bg-contact3" style="background-image: url(https://static.vecteezy.com/system/resources/previews/000/179/126/original/vector-sale-voucher-discount-and-offers-banner-design.jpg);">
 		<div class="container-contact3">
 			<div class="wrap-contact3">
 				<form class="contact3-form validate-form" action=index.php method=post>
@@ -52,7 +50,7 @@
 					</div> -->
 
 					<div class="wrap-input3 validate-input" data-validate="Name is required">
-						<input class="input3" type=text name=totalbeli placeholder="total beli">
+						<input class="input3 uang" type=text name=totalbeli placeholder="total beli">
 						<span class="focus-input3"></span>
 					</div>
 
@@ -185,6 +183,14 @@
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		<script type="text/javascript">
+$(document).ready(function(){
+// Format mata uang.
+$( '.uang' ).mask('#.##0', {reverse: true});
+
+})
+</script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -208,6 +214,11 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
+
+
+
+	
+
 
 </body>
 </html>
